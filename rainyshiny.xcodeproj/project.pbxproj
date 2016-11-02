@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		8D154F72BA10543BE60FCDF9 /* Pods_rainyshiny.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43073D9BACA499CF27F1251C /* Pods_rainyshiny.framework */; };
 		CB6A71781DCA873E00A2C49B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6A71771DCA873E00A2C49B /* AppDelegate.swift */; };
-		CB6A717A1DCA873E00A2C49B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6A71791DCA873E00A2C49B /* ViewController.swift */; };
+		CB6A717A1DCA873E00A2C49B /* WeatherVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6A71791DCA873E00A2C49B /* WeatherVC.swift */; };
 		CB6A717D1DCA873E00A2C49B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB6A717B1DCA873E00A2C49B /* Main.storyboard */; };
 		CB6A717F1DCA873E00A2C49B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB6A717E1DCA873E00A2C49B /* Assets.xcassets */; };
 		CB6A71821DCA873E00A2C49B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB6A71801DCA873E00A2C49B /* LaunchScreen.storyboard */; };
@@ -21,7 +21,7 @@
 		AF273465D17BCCA97848A517 /* Pods-rainyshiny.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rainyshiny.release.xcconfig"; path = "Pods/Target Support Files/Pods-rainyshiny/Pods-rainyshiny.release.xcconfig"; sourceTree = "<group>"; };
 		CB6A71741DCA873E00A2C49B /* rainyshiny.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rainyshiny.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB6A71771DCA873E00A2C49B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CB6A71791DCA873E00A2C49B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CB6A71791DCA873E00A2C49B /* WeatherVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherVC.swift; sourceTree = "<group>"; };
 		CB6A717C1DCA873E00A2C49B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CB6A717E1DCA873E00A2C49B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB6A71811DCA873E00A2C49B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -71,7 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				CB6A71771DCA873E00A2C49B /* AppDelegate.swift */,
-				CB6A71791DCA873E00A2C49B /* ViewController.swift */,
+				CB6A71791DCA873E00A2C49B /* WeatherVC.swift */,
 				CB6A717B1DCA873E00A2C49B /* Main.storyboard */,
 				CB6A717E1DCA873E00A2C49B /* Assets.xcassets */,
 				CB6A71801DCA873E00A2C49B /* LaunchScreen.storyboard */,
@@ -171,7 +171,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		7FF0A67F5EA9379D429CB8A8 /* [CP] Embed Pods Frameworks */ = {
@@ -211,7 +211,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB6A717A1DCA873E00A2C49B /* ViewController.swift in Sources */,
+				CB6A717A1DCA873E00A2C49B /* WeatherVC.swift in Sources */,
 				CB6A71781DCA873E00A2C49B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -374,6 +374,7 @@
 				CB6A71881DCA873E00A2C49B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
