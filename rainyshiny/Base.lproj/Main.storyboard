@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -36,7 +36,7 @@
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="72" id="JfH-qy-DL9"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="60"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="60"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -80,10 +80,11 @@
                                         </constraints>
                                     </stackView>
                                 </subviews>
+                                <color key="backgroundColor" red="0.29520296759999998" green="0.62453551200000001" blue="0.89109051169999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="kps-2E-aQQ" secondAttribute="trailing" constant="8" id="FNl-u2-w8U"/>
-                                    <constraint firstAttribute="bottom" secondItem="kps-2E-aQQ" secondAttribute="bottom" constant="8" id="WFn-ps-Kkw"/>
-                                    <constraint firstItem="kps-2E-aQQ" firstAttribute="leading" secondItem="3mG-wk-R2U" secondAttribute="leading" constant="8" id="ZxO-ce-Z9z"/>
+                                    <constraint firstAttribute="bottom" secondItem="kps-2E-aQQ" secondAttribute="bottom" constant="20" id="WFn-ps-Kkw"/>
+                                    <constraint firstItem="kps-2E-aQQ" firstAttribute="leading" secondItem="3mG-wk-R2U" secondAttribute="leading" constant="20" id="ZxO-ce-Z9z"/>
                                     <constraint firstAttribute="height" constant="283" id="rbf-b8-dtN"/>
                                     <constraint firstItem="kps-2E-aQQ" firstAttribute="top" secondItem="3mG-wk-R2U" secondAttribute="top" constant="30" id="xga-7R-Ne4"/>
                                 </constraints>
@@ -91,11 +92,11 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0gL-7W-7L3">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="70" id="zMZ-hv-cJe">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="70"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="WeatherCell" rowHeight="90" id="zMZ-hv-cJe">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zMZ-hv-cJe" id="IEW-xD-WFe">
-                                            <frame key="frameInset" width="375" height="69"/>
+                                            <frame key="frameInset" width="375" height="89.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xNU-n0-kgL">
@@ -109,12 +110,12 @@
                                                         <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z3P-Ut-wia">
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wednesday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LXs-Tf-UYh">
-                                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="19"/>
+                                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
                                                                     <color key="textColor" white="0.23499461206896552" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="25.6°" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JLl-uC-KLg">
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                                                     <color key="textColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
@@ -153,6 +154,7 @@
                                                 <constraint firstItem="73t-BT-lds" firstAttribute="top" secondItem="IEW-xD-WFe" secondAttribute="top" constant="3" id="y55-PA-QaY"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
